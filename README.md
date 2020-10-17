@@ -1,9 +1,9 @@
 # Chinese-PPDB
-Chineses PPDB (Chinses paraphrase database)是一个自动抽取大规模中文复述语料库。
+Chineses PPDB (Chinese paraphrase database)是一个自动抽取大规模中文复述语料库。
 复述是对相同语义的不同字面表述，是语言多样性的集中体现。
 创建该语料库的目标是增强自然语言处理方法应对中文语言多样性的问题，提升模型的鲁棒性和泛化性。
 
-与PPDB语料库类似，该语料库包含词汇、短语和模版三种粒度的复述数据。
+与[PPDB](http://paraphrase.org/)语料库类似，该语料库包含词汇、短语和模版三种粒度的复述数据。
 
 
 
