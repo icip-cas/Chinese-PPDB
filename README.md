@@ -11,7 +11,7 @@ Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加�
 
 # 文件格式
 与PPDB不同，该语料库以JSON格式作为数据存储的主要格式，以便于后续的读取和使用。对于单条复述其格式如下：
-'''json
+```json
 {
     "type":type,
     "phrase":phrase,
@@ -21,7 +21,7 @@ Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加�
     "alignment":"",
     "entailment":""
 }
-'''
+```
 
 其中type是该复述数据的类型，包括lexical、phrase、template和sentence四种类型；phrase是词、短语或模版，paraphrase是对应的复述，from字段是该该数据的来源，目前的主要来源包含：双语平行数据、单语对齐数据。
 features字段是对该复述对的一些特征，例如编辑距离、词向量相似度等，包含多种特征。特征的列表及其说明在[features.md](https://github.com/cipnlu/Chinese-PPDB/blob/main/features.md)文件中详细描述。
