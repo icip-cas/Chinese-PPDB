@@ -19,8 +19,8 @@ Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加�
 ```json
 {
     "type":"type",
-    "phrase":"text",
-    "paraphrase":"text",
+    "source":"text",
+    "target":"text",
     "from":"",
     "features":{},
     "alignment":"",
@@ -28,7 +28,7 @@ Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加�
 }
 ```
 
-其中type是该复述数据的类型，包括lexical、phrase、template和sentence四种类型；phrase是词、短语或模版，paraphrase是对应的复述，from字段是该该数据的来源，目前的主要来源包含：双语平行数据、单语对齐数据。
+其中type是该复述数据的类型，包括lexical、phrase、template和sentence四种类型；source、短语、模版或句子，target，from字段是该该数据的来源，目前的主要来源包含：双语平行数据、单语对齐数据。
 features字段是对该复述对的一些特征，例如编辑距离、词向量相似度等，包含多种特征。特征的列表及其说明在[features.md](https://github.com/cipnlu/Chinese-PPDB/blob/main/features.md)文件中详细描述。
 alignment字段是两个复述对在词一级的对齐；
 entailment字段是参考PPDB给出的句子对是否为等价语义。
