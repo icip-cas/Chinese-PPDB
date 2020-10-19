@@ -9,6 +9,11 @@ Chineses PPDB (Chinese paraphrase database)是一个自动抽取大规模中文�
 
 Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加语料库的规模，包含的特征、不同的相似度度量的特征等。
 
+# 数据预处理
+## 分词
+该语料库使用[Stanford Corenlp](https://github.com/stanfordnlp/stanza) 实现对中文句子的分词、POS和依存分析。
+
+
 # 文件格式
 与PPDB不同，该语料库以JSON格式作为数据存储的主要格式，以便于后续的读取和使用。对于单条复述其格式如下：
 ```json
@@ -48,10 +53,9 @@ entailment字段是参考PPDB给出的句子对是否为等价语义。
 
 # 相关论文
 1. Juri Ganitkevitch, Benjamin Van Durme, Chris Callison-Burch. PPDB: The Paraphrase Database. Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2013), 2013, pp 758–764
+2. Qi, Peng and Zhang, Yuhao and Zhang, Yuhui and Bolton, Jason and Manning, Christopher D.Stanza: A {Python} Natural Language Processing Toolkit for Many Human Languages. "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations. 2020.
 
 
-# 作者
-Bo An (安波，助理教授)，Xianpei Han (韩先培，导师), Le Sun (孙乐，导师)，Yaozu Sun(孙耀祖，硕士生)
 
 
 
