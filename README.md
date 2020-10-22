@@ -38,6 +38,34 @@ alignment字段是source和target的词对齐；
 entailment字段是参考PPDB给出的句子对是否为等价语义。
 注：当值为""的时候表示暂时没有信息。
 
+## 例子
+```json
+{
+    "type":"pattern",
+    "source":"各 项 国际 商定 的 NN 目标",
+    "target":"国际 商定 的 各 项 NN 目标",
+    "anchor":"internationally agreed development goals",
+    "from":"Bilingual parallel corpus",
+    "features":{
+        "root_pos1":"NN",
+        "pos1":Array[7],
+        "root_pos2":"NN",
+        "pos2":Array[7],
+        "template-score":0.7071067811865476,
+        "lexical_features":Array[36],
+        "syntax_features":Array[74],
+        "translation_features":Array[10],
+        "sbert-score":0.9971049427986145
+    },
+    "alignment":Array[4],
+    "entailment":""
+}
+```
+
+```json
+{"type": "pattern", "source": "各 项 国际 商定 的 NN 目标", "target": "国际 商定 的 各 项 NN 目标", "anchor": "internationally agreed development goals", "from": "Bilingual parallel corpus", "features": {"root_pos1": "NN", "pos1": ["DT", "M", "NN", "VV", "DEC", "NN", "NN"], "root_pos2": "NN", "pos2": ["NN", "VV", "DEC", "DT", "M", "NN", "NN"], "template-score": 0.7071067811865476, "lexical_features": [4, 0.0, 0, 0, 7, 7, 7, 4, 0.0, 0, 0, 7, 7, 7, 4, 0.0, 0, 0, 7, 7, 10, 4, 0.0, 0, 0, 7, 7, 5, 8, 0.0, 0, 0, 14, 14, 11, 1], "syntax_features": [11, 8, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "translation_features": [1.0, 1.0, 1.0, 1.0, 0, 0, 1.0, 1.0, 1.0, 1.0], "sbert-score": 0.9971049427986145}, "alignment": [[[1, 2], [0]], [[3], [1]], [[5], [5]], [[6], [4, 6]]], "entailment": ""}
+```
+
 该数据集的[英文](https://github.com/cipnlu/Chinese-PPDB/blob/main/README.en.md)介绍。
 
 # TODO
