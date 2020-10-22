@@ -29,7 +29,7 @@ Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加�
 }
 ```
 
-其中type是该复述数据的类型，包括lexical、phrase、template和sentence四种类型；
+其中type是该复述数据的类型，包括lexical、phrase、pattern和sentence四种类型；
 source：词、短语、模版或句子；
 target：与source构成复述关系的词、短语、模版或句子；
 from字段是该该数据的来源，目前的主要来源包含：双语平行数据、单语对齐数据；
