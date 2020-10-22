@@ -5,8 +5,6 @@ Chineses PPDB (Chinese paraphrase database)是一个自动抽取大规模中文�
 
 与[PPDB](http://paraphrase.org/)语料库类似，该语料库包含词汇、短语、模版和句子四种粒度的复述数据。
 
-
-
 Chineses PPDB是一个处于起步阶段的语料库，后续会不断的增加语料库的规模，包含的特征、不同的相似度度量的特征等。
 
 # 数据预处理
@@ -38,7 +36,7 @@ from字段是该该数据的来源，目前的主要来源包含：双语平行�
 features字段是对该复述对的一些特征，例如编辑距离、词向量相似度等，包含多种特征。特征的列表及其说明在[features.md](https://github.com/cipnlu/Chinese-PPDB/blob/main/features.md)文件中详细描述。
 alignment字段是source和target的词对齐；
 entailment字段是参考PPDB给出的句子对是否为等价语义。
-注：当值为null或者""的时候表示暂时没有信息。
+注：当值为""的时候表示暂时没有信息。
 
 该数据集的[英文](https://github.com/cipnlu/Chinese-PPDB/blob/main/README.en.md)介绍。
 
